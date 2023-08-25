@@ -1,0 +1,24 @@
+app.js*
+*.pem
+node_modules
+dist
+dist-electron
+release
+*.local
+
+# Editor directories and files
+.vscode/.debug.env
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# lockfile
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+after-version-update.js

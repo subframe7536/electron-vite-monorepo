@@ -1,0 +1,8 @@
+{
+  "name": "@test-mono/ipc",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "typesafe-electron-ipc": "0.6.5"
+  }
+}

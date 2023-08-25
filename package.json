@@ -1,0 +1,29 @@
+{
+  "name": "test-mono-root",
+  "version": "0.0.0-dev",
+  "description": "test of electron monorepo with vite",
+  "author": "subframe7536",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "electron",
+    "vite",
+    "vue3",
+    "vue"
+  ],
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344/"
+    }
+  },
+  "scripts": {
+    "dev": "pnpm --filter ./apps dev"
+  },
+  "devDependencies": {
+    "@subframe7536/eslint-config": "^0.2.5",
+    "eslint": "^8.47.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.2"
+  }
+}

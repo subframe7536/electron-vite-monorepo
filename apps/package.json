@@ -1,0 +1,35 @@
+{
+  "name": "test-mono",
+  "version": "0.0.0-dev",
+  "main": "./dist-electron/main/index.js",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && electron-builder build --config electron-builder.config.js",
+    "preview": "vite preview",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.4.0"
+  },
+  "devDependencies": {
+    "@generouted/solid-router": "^1.15.7",
+    "@solidjs/router": "^0.8.3",
+    "@test-mono/ipc": "workspace:^",
+    "@test-mono/ui": "workspace:^",
+    "@types/better-sqlite3": "^7.6.4",
+    "electron": "^24.6.0",
+    "electron-builder": "^24.6.3",
+    "solid-devtools": "^0.27.7",
+    "solid-js": "^1.7.11",
+    "typesafe-electron-ipc": "0.6.5",
+    "unocss": "^0.55.2",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.12.0",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344/"
+    }
+  }
+}

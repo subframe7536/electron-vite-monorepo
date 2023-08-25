@@ -1,0 +1,10 @@
+{
+  "name": "@test-mono/ui",
+  "version": "0.0.0-dev",
+  "main": "src/index.ts",
+  "dependencies": {
+    "solid-js": "^1.7.11",
+    "unocss": "^0.55.2",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
