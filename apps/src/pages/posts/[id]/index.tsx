@@ -7,7 +7,7 @@ export default function Id() {
   const { id } = useParams('/posts/:id')
   console.log({ id })
   const match = useMatch(() => '/posts/:id')
-  console.log({ match: match()?.params.d })
+  console.log({ match: match()?.params.id })
 
-  return <h1>Id</h1>
+  return <h1>Id: { id } </h1>
 }

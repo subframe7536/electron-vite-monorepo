@@ -1,5 +1,5 @@
 import { Outlet } from '@solidjs/router'
-import { Modals } from '@generouted/solid-router'
+import { Modals } from '@generouted/solid-router/lazy'
 
 import { A, useModals, useNavigate } from '@/router'
 
