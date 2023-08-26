@@ -24,13 +24,13 @@
       "name": "Debug Main Process",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+      "runtimeExecutable": "${workspaceRoot}/apps/node_modules/.bin/electron",
       "windows": {
-        "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+        "runtimeExecutable": "${workspaceRoot}/apps/node_modules/.bin/electron.cmd"
       },
       "runtimeArgs": [
         "--remote-debugging-port=9229",
-        "."
+        "./apps"
       ],
       "envFile": "${workspaceFolder}/.vscode/.debug.env",
       "console": "integratedTerminal"
@@ -43,8 +43,8 @@
       "timeout": 60000,
       "skipFiles": [
         "<node_internals>/**",
-        "${workspaceRoot}/node_modules/**",
-        "${workspaceRoot}/dist-electron/**",
+        "**/node_modules/**",
+        "**/dist-electron/**",
         // Skip files in host(VITE_DEV_SERVER_URL)
         "http://127.0.0.1:3344/**"
       ]
